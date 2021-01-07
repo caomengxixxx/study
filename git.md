@@ -167,9 +167,12 @@ git checkout [分支名]
 
 ```bash
 # 第一步：切换到接受修改的分支（被合并，增加新内容）上
-git checkout [被合并分支名]
+git checkout [接收合并分支名]
+# git checkout master
 # 第二步：执行merge命令
 git merge [有新内容的分支名]
+# git merge hot_fix
+# 这样子就把hot_fix合并到master中了
 ```
 
 ###### 解决冲突
@@ -295,5 +298,15 @@ https://about.gitlab.com/install/#centos-7
 
 # 部署好之后，直接访问ip地址即可
 106.14.20.157
+```
+
+##### 24、集成idea
+
+```java
+// 为什么要忽略.idea,.iml等文件，因为无法保证团队里面的人使用同一款ide开发工具，所以一些配置文件会发生冲突，（重要的很）
+
+// 在vcs中创建git的本地库，选中总的项目，即可创建一个本地库（基操）
+
+// 
 ```
 
