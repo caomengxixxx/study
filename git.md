@@ -310,3 +310,22 @@ https://about.gitlab.com/install/#centos-7
 // 
 ```
 
+##### 25、补充
+
+```bash
+# 查看本地分支
+git branch -a
+
+# 比较项目中的不同
+git diff
+
+# 把所有的文件都暂存
+git add .
+
+# 提交到本地库
+git commit -m "注释" 
+
+# 推送到远程库
+git push origin HEAD:分支名
+```
+
